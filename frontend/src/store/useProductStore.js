@@ -3,7 +3,7 @@ import axios from "axios";
 import toast from "react-hot-toast";
 
 // base url will be dynamic depending on the environment
-const BASE_URL = import.meta.env.MODE === "development" ? "http://localhost:3000" : "";
+const BASE_URL = import.meta.env.MODE === "development" ? `http://localhost:5001` : "";
 
 export const useProductStore = create((set, get) => ({
   // products state
@@ -53,7 +53,7 @@ export const useProductStore = create((set, get) => ({
       set({ loading: false });
     }
   },
-
+  //delete
   deleteProduct: async (id) => {
     console.log("deleteProduct function called", id);
     set({ loading: true });
