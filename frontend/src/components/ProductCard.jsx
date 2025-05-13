@@ -1,6 +1,6 @@
-import { EditIcon, Link, Trash2Icon } from "lucide-react"
+import { EditIcon,  Trash2Icon } from "lucide-react"
 import { useProductStore } from "../store/useProductStore";
-
+import { Link } from "react-router-dom"
 function ProductCard( {product} ) {
     console.log(product)
     const {deleteProduct} = useProductStore()
@@ -22,7 +22,7 @@ function ProductCard( {product} ) {
       
       {/* card actions */}
 
-      <div className="card-actions justify-end mt-4">
+      <div className="card-actions justify-end mt-4 ">
         <Link to={`/product/${product.id}`} className="btn btn-sm btn-info btn-outline">
           <EditIcon className="size-4" />
         </Link>

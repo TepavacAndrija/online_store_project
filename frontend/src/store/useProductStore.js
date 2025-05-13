@@ -22,6 +22,7 @@ export const useProductStore = create((set, get) => ({
   setFormData: (formData) => set({ formData }),
   resetForm: () => set({ formData: { name: "", price: "", image: "" } }),
 
+  //add product button
   addProduct: async (e) => {
     e.preventDefault();
     set({ loading: true });
