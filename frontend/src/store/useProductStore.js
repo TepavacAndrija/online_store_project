@@ -69,7 +69,7 @@ export const useProductStore = create((set, get) => ({
       set({ loading: false });
     }
   },
-
+  //get product
   fetchProduct: async (id) => {
     set({ loading: true });
     try {
@@ -86,6 +86,7 @@ export const useProductStore = create((set, get) => ({
       set({ loading: false });
     }
   },
+  //update product
   updateProduct: async (id) => {
     set({ loading: true });
     try {
