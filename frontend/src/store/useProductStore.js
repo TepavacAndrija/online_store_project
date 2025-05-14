@@ -69,7 +69,7 @@ export const useProductStore = create((set, get) => ({
       set({ loading: false });
     }
   },
-  //get product
+  //get product for product page
   fetchProduct: async (id) => {
     set({ loading: true });
     try {

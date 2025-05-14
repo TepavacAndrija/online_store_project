@@ -1,4 +1,3 @@
-
 import { useNavigate, useParams } from "react-router-dom";
 import { useProductStore } from "../store/useProductStore";
 import { useEffect } from "react";
@@ -147,4 +146,6 @@ function ProductPage() {
     </div>
   );
 }
+
 export default ProductPage;
+
