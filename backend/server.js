@@ -21,8 +21,8 @@ app.use(
   helmet({
     contentSecurityPolicy: false,
   })
-); // helmet is a security middleware that helps you protect your app by setting various HTTP headers
-app.use(morgan("dev")); // log the requests
+); 
+app.use(morgan("dev")); 
 
 // apply arcjet rate-limit to all routes
 app.use(async (req, res, next) => {
